@@ -21,6 +21,7 @@ services:
     container_name: ms-mongo-db
     image: mongo
     environment:
+      MONGO_INITDB_DATABASE: customer
       MONGO_INITDB_ROOT_USERNAME: ${MONGO_USER:-monty}
       MONGO_INITDB_ROOT_PASSWORD: ${MONGO_PASS:-monty}
     volumes:
@@ -29,6 +30,7 @@ services:
       - 27017:27017
     networks:
       - microservices-net
+    restart: unless-stopped
 
   # ===== Database UI Tools =====
   # --- pgAdmin ---
