@@ -1,0 +1,17 @@
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+
+spring:
+  cloud:
+    config:
+      override.system-properties: false
+
+logging:
+  level:
+    root: INFO
+    io.github.montytsai: DEBUG
+    org.hibernate.orm.jdbc.bind: TRACE

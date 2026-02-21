@@ -5,8 +5,8 @@ services:
     container_name: ms-pg-sql
     image: postgres
     environment:
-      POSTGRES_USER: ${POSTGRES_USER:-monty}
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-monty}
+      POSTGRES_USER: ${MS_PG_USER:-monty}
+      POSTGRES_PASSWORD: ${MS_PG_PWD:-monty}
       PGDATA: /var/lib/postgresql/data
     volumes:
       - postgres_data:/var/lib/postgresql/data
