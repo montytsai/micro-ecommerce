@@ -22,8 +22,8 @@ services:
     image: mongo
     environment:
       MONGO_INITDB_DATABASE: customer
-      MONGO_INITDB_ROOT_USERNAME: ${MONGO_USER:-monty}
-      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_PASS:-monty}
+      MONGO_INITDB_ROOT_USERNAME: ${MS_MONGO_USER:-monty}
+      MONGO_INITDB_ROOT_PASSWORD: ${MS_MONGO_PWD:-monty}
     volumes:
       - mongo_data:/data/db
     ports:
