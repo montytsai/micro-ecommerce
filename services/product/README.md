@@ -3,7 +3,7 @@
 Product catalog and inventory microservice for the e-commerce platform. 
 Manages products, categories, and purchase (stock deduction) with concurrent-safe behaviour.
 
-English] | [繁體中文](README.zh-TW.md)
+English | [繁體中文](README.zh-TW.md)
 
 ## Tech Stack
 
